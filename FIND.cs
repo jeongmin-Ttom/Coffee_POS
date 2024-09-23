@@ -11,26 +11,17 @@ using MySql.Data.MySqlClient;
 
 namespace Coffee_POS
 {
-    public partial class Form1 : Form
+    public partial class FIND : Form
     {
         string address = String.Format("SERVER = LOCALHOST; DATABASE = cafe; Uid = root; Pwd = dlwjdals12!");
-        public Form1()
+        public FIND()
         {
             InitializeComponent();
             this.CenterToScreen();
         }
 
-        private void Login_Click(object sender, EventArgs e)    // MySql DB 활용해서 만들어보기
+        private void Find_Button_Click(object sender, EventArgs e)
         {
-            //if (ID_Box.Text == "dlwjdals" && PW_Box.Text == "wjdals12")
-            //{
-            //    this.Hide(); 
-            //    new POS().Show();
-            //}
-            //if (ID_Box.Text != "dlwjdals")
-            //    MessageBox.Show("아이디를 확인해주세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //else if (PW_Box.Text != "wjdals12")
-            //    MessageBox.Show("비밀번호를 확인해주세요.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             try
             {
                 using (MySqlConnection conn = new MySqlConnection(address))
@@ -41,12 +32,12 @@ namespace Coffee_POS
                     cmd.ExecuteNonQuery();
                     MySqlDataReader reader = cmd.ExecuteReader();
 
-                    while(reader.Read())
+                    while (reader.Read())
                     {
-                        if(ID_Box.Text == reader["ID"].ToString() && PW_Box.Text == reader["PWD"].ToString())
+                        if (Name.Text == reader["Name"].ToString())  
                         {
                             this.Hide();
-                            new POS().Show();
+                            MessageBox.Show((string)reader["ID"] + "\n" + reader["PWD"]);
                         }
                         else
                         {
@@ -56,17 +47,10 @@ namespace Coffee_POS
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
-
-        private void Find_Button_Click(object sender, EventArgs e)  // 찾기 버튼
-        {
-            new FIND().Show();
-        }
-
     }
 }

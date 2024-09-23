@@ -33,6 +33,7 @@
             this.PW_Box = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Find_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ID_Box
@@ -41,9 +42,13 @@
             this.ID_Box.Name = "ID_Box";
             this.ID_Box.Size = new System.Drawing.Size(269, 28);
             this.ID_Box.TabIndex = 0;
+            this.ID_Box.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Login
             // 
+            this.Login.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Login.Font = new System.Drawing.Font("굴림", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Login.Location = new System.Drawing.Point(172, 157);
             this.Login.Name = "Login";
@@ -60,6 +65,7 @@
             this.PW_Box.PasswordChar = '*';
             this.PW_Box.Size = new System.Drawing.Size(269, 28);
             this.PW_Box.TabIndex = 0;
+            this.PW_Box.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox3
             // 
@@ -79,12 +85,24 @@
             this.textBox4.TabIndex = 0;
             this.textBox4.Text = "ID";
             // 
+            // Find_Button
+            // 
+            this.Find_Button.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Find_Button.Location = new System.Drawing.Point(372, 12);
+            this.Find_Button.Name = "Find_Button";
+            this.Find_Button.Size = new System.Drawing.Size(80, 30);
+            this.Find_Button.TabIndex = 2;
+            this.Find_Button.Text = "찾기";
+            this.Find_Button.UseVisualStyleBackColor = true;
+            this.Find_Button.Click += new System.EventHandler(this.Find_Button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(464, 234);
+            this.Controls.Add(this.Find_Button);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.PW_Box);
             this.Controls.Add(this.textBox4);
@@ -104,6 +122,7 @@
         private System.Windows.Forms.TextBox PW_Box;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button Find_Button;
     }
 }
 

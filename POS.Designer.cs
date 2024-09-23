@@ -29,63 +29,63 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem(new string[] {
             "원두",
             "50",
             "50개당 1통(1KG) 소요, 1잔당 20g(10통 미만 주문)"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem(new string[] {
             "우유",
             "100",
             "4개당 1통(1L) 소요, 1잔당 250ml (10통 미만 주문)"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem(new string[] {
             "초코시럽",
             "25",
             "40개당 1통(1L) 소요, 1잔당 25ml (5통 미만 주문)"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem(new string[] {
             "딸기케익",
             "30",
             "10개 미만이 되면 주문하기"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem(new string[] {
             "초코케익",
             "30",
             "10개 미만이 되면 주문하기"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem(new string[] {
             "치즈케익",
             "30",
             "10개 미만이 되면 주문하기"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem(new string[] {
             "브라우니",
             "20",
             "10개 미만이 되면 주문하기"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem(new string[] {
             "머핀",
             "20",
             "10개 미만이 되면 주문하기"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem(new string[] {
             "베이글",
             "20",
             "10개 미만이 되면 주문하기"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem26 = new System.Windows.Forms.ListViewItem(new string[] {
             "크로플",
             "25",
             "10개 미만이 되면 주문하기"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem27 = new System.Windows.Forms.ListViewItem(new string[] {
             "티라미슈",
             "30",
             "10개 미만이 되면 주문하기"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem28 = new System.Windows.Forms.ListViewItem(new string[] {
             "2024-07-01",
             "245500"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem29 = new System.Windows.Forms.ListViewItem(new string[] {
             "2024-07-02",
             "302000"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem30 = new System.Windows.Forms.ListViewItem(new string[] {
             "2024-07-03",
             "203500"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem31 = new System.Windows.Forms.ListViewItem(new string[] {
             "2024-07-04",
             "317500"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem32 = new System.Windows.Forms.ListViewItem(new string[] {
             "2024-07-05",
             "265000"}, -1);
             this.Order_B = new System.Windows.Forms.Button();
@@ -186,6 +186,7 @@
             this.Sales_Plus = new System.Windows.Forms.Button();
             this.Sales_Search = new System.Windows.Forms.Button();
             this.Calendar1 = new System.Windows.Forms.MonthCalendar();
+            this.Change_button = new System.Windows.Forms.Button();
             this.Order_G.SuspendLayout();
             this.Desertlist.SuspendLayout();
             this.Inventory_G.SuspendLayout();
@@ -939,17 +940,17 @@
             this.listView_Inventory.GridLines = true;
             this.listView_Inventory.HideSelection = false;
             this.listView_Inventory.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4,
-            listViewItem5,
-            listViewItem6,
-            listViewItem7,
-            listViewItem8,
-            listViewItem9,
-            listViewItem10,
-            listViewItem11});
+            listViewItem17,
+            listViewItem18,
+            listViewItem19,
+            listViewItem20,
+            listViewItem21,
+            listViewItem22,
+            listViewItem23,
+            listViewItem24,
+            listViewItem25,
+            listViewItem26,
+            listViewItem27});
             this.listView_Inventory.Location = new System.Drawing.Point(32, 162);
             this.listView_Inventory.Name = "listView_Inventory";
             this.listView_Inventory.Size = new System.Drawing.Size(781, 359);
@@ -1109,11 +1110,11 @@
             this.listView_Sales.GridLines = true;
             this.listView_Sales.HideSelection = false;
             this.listView_Sales.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem12,
-            listViewItem13,
-            listViewItem14,
-            listViewItem15,
-            listViewItem16});
+            listViewItem28,
+            listViewItem29,
+            listViewItem30,
+            listViewItem31,
+            listViewItem32});
             this.listView_Sales.Location = new System.Drawing.Point(345, 28);
             this.listView_Sales.Name = "listView_Sales";
             this.listView_Sales.Size = new System.Drawing.Size(485, 503);
@@ -1236,6 +1237,17 @@
             this.Calendar1.TabIndex = 1;
             this.Calendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.Calendar1_DateSelected);
             // 
+            // Change_button
+            // 
+            this.Change_button.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Change_button.Location = new System.Drawing.Point(12, 9);
+            this.Change_button.Name = "Change_button";
+            this.Change_button.Size = new System.Drawing.Size(139, 30);
+            this.Change_button.TabIndex = 5;
+            this.Change_button.Text = "비밀번호 변경";
+            this.Change_button.UseVisualStyleBackColor = true;
+            this.Change_button.Click += new System.EventHandler(this.Change_button_Click);
+            // 
             // POS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -1243,6 +1255,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(897, 675);
+            this.Controls.Add(this.Change_button);
             this.Controls.Add(this.Sales_G);
             this.Controls.Add(this.Inventory_G);
             this.Controls.Add(this.Nowtime);
@@ -1365,5 +1378,6 @@
         private System.Windows.Forms.Button Sales_Search;
         private System.Windows.Forms.TextBox sale;
         private System.Windows.Forms.Button Sales_Plus;
+        private System.Windows.Forms.Button Change_button;
     }
 }

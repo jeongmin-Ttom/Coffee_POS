@@ -98,6 +98,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change.Designer.cs">
+      <DependentUpon>Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FIND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIND.Designer.cs">
+      <DependentUpon>FIND.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Change.resx">
+      <DependentUpon>Change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIND.resx">
+      <DependentUpon>FIND.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
